@@ -18,26 +18,47 @@ let n = 100; //number
 // Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, 
 // a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 
+
+
+// ...PROVO A USARE CREATE.ELEMENT
+
+
+
 let ulList = document.getElementById('ul-list'); //element
 
 
 for(let i = 1; i <= n; ++i){
 
+   let liObject = document.createElement('li'); //element
+   liObject.classList.add('list-item'); 
+
+   
    
 
+   
     let x3 = i % 3; //number
     let x5 = i % 5; //numer
     let x15 = i % 15; //number
     
     if(x15 === 0){
-        ulList.innerHTML += `<li class="list-item fizzbuzz">FizzBuzz</li>`
+        liObject.innerHTML += 'FizzBuzz'
+        liObject.classList.add('fizzbuzz')
     } else if (x5 === 0){
-        ulList.innerHTML += `<li class="list-item buzz">Buzz</li>`
+        liObject.innerHTML += ' Buzz'
+        liObject.classList.add('buzz')
     } else if (x3 === 0){
-        ulList.innerHTML += `<li class="list-item fizz">Fizz</li>`
+        liObject.innerHTML += ' Fizz'
+        liObject.classList.add('fizz')
     } else{
-        ulList.innerHTML += `<li class="list-item number">${i}</li>`
+        liObject.innerHTML += i 
+        liObject.classList.add('number')
+        
     }
+
+
+    ulList.append(liObject); //element
+
+    
 }
 
 

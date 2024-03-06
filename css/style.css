@@ -9,8 +9,7 @@ body{
 .container{
     width: 800px;
     margin: 0 auto;
-    border: 1px solid white;
-    border-radius: 10px;
+    
 }
 
 .list-element{
