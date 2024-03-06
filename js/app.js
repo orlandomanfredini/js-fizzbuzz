@@ -7,6 +7,21 @@
 
 let n = 100; //number
 
+//Uso ciclo for per assegnare valori ai multipli di 3 e 5 
+
 for(let i = 1; i <= n; ++i){
-    console.log(i)
+
+    let x3 = i % 3;
+    let x5 = i % 5;
+    let x15 = i % 15;
+    
+    if(x15 === 0){
+        console.log('FizzBuzz')
+    } else if (x5 === 0){
+        console.log('Buzz')
+    } else if (x3 === 0){
+        console.log('Fizz')
+    } else{
+        console.log(i)
+    }
 }
