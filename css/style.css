@@ -1,0 +1,46 @@
+ul, li, menu{
+    list-style: none;
+}
+
+body{
+    background-color: #12313C;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.list-element{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.list-item{
+    width: calc(800px / 10);
+    aspect-ratio: 1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fizzbuzz{
+    background-color: rgb(211, 89, 89);
+}
+
+.buzz{
+    background-color: rgb(224, 191, 7);
+}
+
+.fizz{
+    background-color: rgb(40, 163, 122);
+}
+
+.number{
+    background-color: rgb(114, 199, 199);
+}
