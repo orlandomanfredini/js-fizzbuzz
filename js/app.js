@@ -5,7 +5,7 @@
 
 // Scrivo un programma, usando ciclo for, per stampare numeri da 1 a 100//
 
-let n = 100; //number
+
 
 //Uso ciclo for per assegnare valori ai multipli di 3 e 5 
 
@@ -22,7 +22,7 @@ let n = 100; //number
 
 // ...PROVO A USARE CREATE.ELEMENT
 
-
+let n = 100; //number
 
 let ulList = document.getElementById('ul-list'); //element
 
@@ -44,10 +44,10 @@ for(let i = 1; i <= n; ++i){
         liObject.innerHTML += 'FizzBuzz'
         liObject.classList.add('fizzbuzz')
     } else if (x5 === 0){
-        liObject.innerHTML += ' Buzz'
+        liObject.innerHTML += 'Buzz'
         liObject.classList.add('buzz')
     } else if (x3 === 0){
-        liObject.innerHTML += ' Fizz'
+        liObject.innerHTML += 'Fizz'
         liObject.classList.add('fizz')
     } else{
         liObject.innerHTML += i 
